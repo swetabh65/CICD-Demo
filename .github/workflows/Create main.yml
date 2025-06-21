@@ -35,8 +35,8 @@ jobs:
           whomami
           pwd
           la-al
-          mkdir dex456
-
+          mkdir dex_part1
+          cd dex_part1
       
     - name: Show All Files
       run: ls -al
@@ -49,6 +49,6 @@ jobs:
         key: ${{ secrets.EC2_SSH_KEY }}
         port: ${{ secrets.EC2_PORT }}
         source: "./"
-        target: "./"
+        target: "/var/www/dex_part1"
       
       
