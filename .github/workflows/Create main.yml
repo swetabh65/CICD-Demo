@@ -42,7 +42,7 @@ jobs:
       run: ls -al
 
     - name: Copy files via SCP
-      uses: appleboy/scp-action@v.0.1.7
+      uses: appleboy/scp-action@v0.1.7
       with:
         host: ${{ secrets.EC2_HOST }}
         username: ${{ secrets.EC2_USERNAME }}
