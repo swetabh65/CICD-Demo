@@ -23,5 +23,3 @@ jobs:
     - name: Show all files
 
       run: ls -al
-
-    - name: Doing SSH to EC2
