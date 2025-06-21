@@ -8,10 +8,6 @@ on:
 
       - main
 
-      - dev
-
-      - d
-
 jobs:
 
   deploy:
@@ -20,13 +16,12 @@ jobs:
 
     steps:
 
-      - name: Checkout Code
+    - name: Checkout Code
 
-        uses: actions/checkout@v4
+      uses: actions/checkout@v4
 
-      - name: Show all files
+    - name: Show all files
 
-        run: ls -al
-        
-      - name: Doing SSH to EC2
-      
+      run: ls -al
+
+    - name: Doing SSH to EC2
