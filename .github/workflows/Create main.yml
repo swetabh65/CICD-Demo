@@ -35,5 +35,20 @@ jobs:
           whomami
           pwd
           la-al
-          mkdir dex123
+          mkdir dex456
+
+      
+    - name: Show All Files
+      run: ls -al
+
+    - name: Copy files via SCP
+      uses: appleboy/scp-action@v.0.1.7
+      with:
+        host: ${{ secrets.EC2_HOST }}
+        username: ${{ secrets.EC2_USERNAME }}
+        key: ${{ secrets.EC2_SSH_KEY }}
+        port: ${{ secrets.EC2_PORT }}
+        source: "./"
+        target: "./"
+      
       
